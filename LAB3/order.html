@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Beer Store</title>
+    <link rel="stylesheet" href="style/form.css">
+</head>
+
+<body>
+    <nav>
+        <div class="topnav">
+            <a class="logo" href="index.html"><img src="images/logo.png"></a>
+            <a href="index.html">Home</a>
+            <a href="all-beer.html">See All Beers</a>
+            <a class="active" href="order.html">Order</a>
+            <a class="right" href="register.html">Register</a>
+            <a class="right" href="login.html">Login</a>
+        </div>
+    </nav>
+    <main>
+        <center>
+            <h1>Order a beer</h1>
+            <br />
+            <form>
+                <label><b>Brand</b></label>
+                <select name="brand" id="brand">
+                    <option selected disabled> Select a brand</option>
+                    <option value="Corona">Corona extra 300ml</option>
+                    <option value="Stella">Stella Artois 500ml</option>
+                    <option value="Carlsberg">Carlsberg 250ml</option>
+                    <option value="Heineken">Heineken 300ml</option>
+                </select>
+                <label for="quantity"><b>Quantity</b></label>
+                <input type="number" min="1" max="15" placeholder="Enter amount 1 to 15">
+
+                <label><b>Destination</b></label>
+                <select name="destination" id="destination">
+                    <option selected disabled> Select a destination</option>
+                    <option value="Stm">Stockholm</option>
+                    <option value="ups">Uppsala</option>
+                    <option value="nys">Nynasham</option>
+                    <option value="gbg">Gotheberg</option>
+                </select>
+                <label for="birthday">Enter your birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+                <label for="opnion">Got an opnion, Recommandation and review ? Share with us:</label>
+                <textarea id="opnion" name="opnion" rows="4" cols="50">
+                  </textarea>
+                <input type="submit" value="Order">
+            </form>
+        </center>
+    </main>
+    <footer>
+        <hr />
+        <p><em>&copy; 2020 &ndash; Beer Store</em></p>
+    </footer>
+</body>
+
+</html>
