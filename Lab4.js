@@ -62,20 +62,43 @@ var times = Number(numArr[0]);
 var output = 0;
 for (var i = times; i <= times; i++) {
     for (var j = 1; j <= i; j++) {
-        output += j +'';
+        output += j + '';
     }
 }
 console.log(output);
+// 6.	Figure Area
+// Write a JS function that calculates the area of the figure on the right by given values for w, h, W and H. The lower right corner is always common for the two rectangles.
+
+var rctgl = ['2', '4', '5', '3'];
+var a1 = rctgl[0] * rctgl[1];
+var a2 = rctgl[2] * rctgl[3];
+var c = a1 - a2;
+var d = c + a1;
+console.log("Area :" + d);
 
 // 7.	Next Day
 // Write a JS function that calculates the date of the next day by given year, month and day.
 // The input comes as array of three string elements that need to be parsed as numbers. The first element is the year, the second is the month and the third is the day.
-var input =['2016', '9', '30'];
-var yr=Number(input[0]);
-var mn=Number(input[1]);
-var dt=Number(input[2]);
-var d= new Date(yr,mn-1,dt+1);
+var input = ['2016', '9', '30'];
+var yr = Number(input[0]);
+var mn = Number(input[1]);
+var dt = Number(input[2]);
+var d = new Date(yr, mn - 1, dt + 1);
 console.log(d);
 d.setDate(d.getDate() + 1);
-//var newDate= oDate.addDays(1);
 console.log(d);
+
+// 8.	Distance between Points
+// Write a JS function that calculates the distance between two points by given x and y coordinates. Use objects to store the two points.
+var crd = ['2', '4', '5', '0'];
+distanceCal();
+crd = ['2.34', '15.66', '-13.55', '-2.9985'];
+distanceCal();
+function distanceCal() {
+    var a = crd[0] - crd[2];
+    var b = crd[1] - crd[3];
+    var line = Math.sqrt(a * a + b * b);
+    console.log("Distane :" + line);
+}
+
+
