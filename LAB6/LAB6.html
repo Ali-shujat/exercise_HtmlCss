@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Beer Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/form.css">
+</head>
+
+<body>
+
+  <h2>Lab6 JavaScript</h2>
+  <p>1. Text from a List
+    NOTE: Don’t forget to comment the code and explain what it’s doing. You can comment in HTML like this:
+    <!--Comment -->
+    A HTML page holding a list of items and an [Extract Text] button is given. Implement the extractText function which
+    will be called when the button's onClick event is fired.
+  </p>
+  <div class="container">
+    <!-- 1.	Text from a List here -->
+    <ul id="items">
+      <li>first item</li>
+      <li>second item</li>
+      <li>third item</li>
+    </ul>
+    <button onclick="extractText()">
+      Extract Text</button>
+    <div id="result">
+
+    </div>
+  </div>
+  <p>2. Search in a List
+    An HTML page holds a list of towns, a search box and a [Search] button. Implement the search function to bold the
+    items from the list which include the text from the search box. Also print the amount of items the current search
+    matches in the format "<matches> matches found."
+  </p>
+  <div class="container">
+    <!-- 2.	Search in a List here -->
+    <ul id="towns">
+      <li>Stockholm</li>
+      <li>Malmö</li>
+      <li>Göteborg</li>
+      <li>Malung</li>
+    </ul>
+    <input type="text" id="searchText" />
+    <button onclick="search()">Search</button>
+    <div id="result">
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" script></script>
+
+</html>

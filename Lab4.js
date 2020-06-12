@@ -72,7 +72,11 @@ console.log(output);
 var rctgl = ['2', '4', '5', '3'];
 var a1 = rctgl[0] * rctgl[1];
 var a2 = rctgl[2] * rctgl[3];
-var c = a1 - a2;
+var c;
+if(a1>a2){
+    c = a1 - a2;
+}
+
 var d = c + a1;
 console.log("Area :" + d);
 

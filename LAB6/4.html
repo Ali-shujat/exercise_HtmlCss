@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selectable Cities</title>
+    <style>
+        li {
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        ul {
+            padding: 0;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="select-towns.js"></script>
+</head>
+
+<body>
+    <p>5. Selectable Cities
+        Create an HTML page listing Cities, a city should be selectable. Clicking on a town should select/deselect it, a
+        selected city should have the data-selected attribute added to it and its background color should be changed to
+        #DDD. Also create a button [Show Cities] that prints the text "Selected cities: " followed by all selected towns
+        joined with a ", ".
+    </p>
+    <h2>Cities</h2>
+    <ul id="items">
+        <li>Stockholm</li>
+        <li>Göteborg</li>
+        <li>Malmö</li>
+        <li>Uppsala</li>
+        <li>Umeå</li>
+    </ul>
+    <button id="showTownsButton">Show Cities</button>
+    <div id="selectedTowns"></div>
+    <script>$(attachEvents())</script>
+</body>
+
+</html>
