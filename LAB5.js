@@ -36,11 +36,16 @@ class Person {
         this.age = age;
         this.email = email;
     }
-
-    toString() {
-        var str = this.firstName + ' ' + this.lastName + '(' + "Age:" + this.age + ' ' + "email:" + this.email + ')';
-        return str;
-    };
+    // toString() {
+    //     var str = this.firstName + ' ' + this.lastName + '(' + "Age:" + this.age + ' ' + "email:" + this.email + ')';
+    //     return str;
+    // };
+}
+Person.prototype.toString = function(){
+    //return '${this.firstName}  ${this.lastName} (  Age: ${this.age} Email: ${this.email}';
+    var str = this.firstName + ' ' + this.lastName + '(' + "Age:" + this.age + ' ' + "email:" + this.email + ')';
+      return str;
+    
 }
 let person = new Person('Maria', 'Petterson', 22, 'mp@gmail.com');
 console.log(person.toString());
@@ -58,7 +63,7 @@ arrPer[2] = new Person('Maria', 'Petterson', 22, 'mp@gmail.com');
 arrPer[3] = new Person('Stefean', 'Lars', 29, '');
 
 for (let per in arrPer) {
-    console.log(arrPer[per]);
+    console.log(arrPer[per].toString());
 }
 // 4.	Circle
 // Write a JS class that represents a Circle.It has only one data property – it’s radius, and it is set trough the constructor.The class needs to have getter and setter methods for its diameter – the setter needs to calculate the radius and change it and the getter needs to use the radius to calculate the diameter and return it.
