@@ -21,23 +21,27 @@ function initializeTable() {
             "</td>" +
             "</tr>"
         );
+        fixlinks(this);
     });
 }
 function productDelete(ctl) {
-    console.log("productDelete");
     $(ctl).parents("tr").remove();
 }
 function down(ctl) {
-    console.log("down");
     var row = $(ctl).parents("tr:first");
     row.insertAfter(row.next());
-    console.log(row);
 }
 function up(ctl) {
-    console.log("up");
     var row = $(ctl).parents("tr:first");
     row.insertBefore(row.prev());
-    console.log(row);
+}
+function fixlinks(ctl){
+    let lst= $('#countriesTable tr:last');
+    console.log(lst);
+    let frst= $(ctl).siblings(":first");
+    if($(this).is(":last")){
+        $(this).hide();
+    }
 }
 
 

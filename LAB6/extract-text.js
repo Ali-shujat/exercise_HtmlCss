@@ -9,6 +9,7 @@ function extractText() {
 }
 
 function search() {
+  $("#towns li").css("font-weight", "");
   var value = $("#searchText").val();
   console.log(value);
   var len = 0;
@@ -21,3 +22,4 @@ function search() {
   console.log(len);
   $("#output").text(len + " matches found");
 }
+//shujat
