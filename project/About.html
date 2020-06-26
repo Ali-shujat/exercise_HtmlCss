@@ -13,6 +13,29 @@
   <link rel="stylesheet" href="css/bootstrap-social.css">
   <!-- Add font library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .nyContainer {
+      padding: 20px 40px 40px;
+      max-width: 640px;
+    }
+
+    .nyContainer__image {
+      display: inline-block;
+      vertical-align: top;
+      width: 46%;
+      margin: 20px 30px 0 0;
+    }
+
+    .nyContainer__text {
+      display: inline-block;
+      width: 46%;
+
+      @media (max-width: 620px) {
+        width: 100%;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -32,11 +55,11 @@
           <li class="nav-item">
             <a class="nav-link" href="">Event</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="About.html">About</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+          <li class="nav-item ">
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Gallery.html">Gallery</a>
@@ -48,110 +71,74 @@
   <!-- jumbotron -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-3">Contact us</h1>
-      <p class="lead">Circus Restaurant is continuously improving customer services. If you have any questions about
-        your order, our website or comments please contact us anytime!.</p>
+      <h1 class="display-3">About us</h1>
+      <p class="lead">Circus Eats is a place that reaches beyond the boundaries of culinary tradition, while honoring
+        food, flavour, sustainability and community. We welcome our guests to enjoy the seasonal swedish produce in a
+        warm, social, open-kitchen atmosphere.</p>
     </div>
   </div>
 
+  <!-- temp -->
+
+  <!-- ----------------------------- -->
 
 
   <!-- contact form -->
-  <div class="conatiner">
-    <div class="text-center">
-      <h2>How Can We Help?</h2>
-      </br>
-      <h5>Please select a topic related to your inquiry fill out our contact form. If you don’t find what you
-        need,
-        contact us. </h5>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="nyContainer">
+        <img class="nyContainer__image" src="images/Website.jpg" alt="...">
+        <div class="nyContainer__text">
+          We’ll be opening our doors from midday and they’ll be a few surprises in store so
+          come and see Circus in
+          a whole new light, start the afternoon off with the sumptuous menu then as the lights go down get ready
+          for our famous Circus performances. A casual Evening and a show with a difference!
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="col">
-        <div class="conatiner">
-          <div class="text-center">
-            <p></p>
-            <div>
-              <h5><i class="fa fa-building-o" aria-hidden="true"></i> Company: Circus Restaurant</h5>
-            </div>
-            <div>
-              <h5> <i class="fa fa-map-marker" aria-hidden="true"></i> Address: Årstaängsvägen9 11743 Stockholm</h5>
-            </div>
-            <div>
-              <h5><i class="fa fa-phone" aria-hidden="true"></i> Phone: +4687628000</h5>
-            </div>
-            <div>
-              <h5><i class="fa fa-globe" aria-hidden="true"></i> Website: www.circusRestaurant.se</h5>
-            </div>
+    <div class="row justify-content-center">
+        <div class="nyContainer">
+            <h5>Awards & honors</h5>
+          <img class="nyContainer__image" src="images/Awards.jpg" alt="...">
+          <div class="nyContainer__text">
+              Top 4 Sweden's Best Restaurants, White Guide 2019
+              Awarded two stars in the Michelin Guide 2019
+              Service team of the year, Swedish Restaurants awards 2018
+              Awarded a star in the Michelin Guide 2018
+              Top 6 Nordic Best Restaurants, White Guide 2018
+              Top 4 Sweden's Best Restaurants, White Guide 2018
+              Awarded a star in Guide Michelin 2018
           </div>
         </div>
-        <!-- Map Container (Grid) -->
-        <div class="container-fluid text-center">
-          <!-- <h2 class="margin" style="font-family: 'Chicle', cursive;font-size: 2.5em;">You can find me here...</h2> -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.3120016321707!2d18.027853715559697!3d59.311046919531016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77c7003371d9%3A0xb5391fbee7ab86a4!2zw4Vyc3Rhw6RuZ3N2w6RnZW4gOSwgMTE3IDQzIFN0b2NraG9sbQ!5e0!3m2!1sen!2sse!4v1592951690785!5m2!1sen!2sse"
-            width="400" height="300" frameborder="1" style="border:1;" allowfullscreen="" aria-hidden="false"
-            tabindex="1"></iframe>
-        </div>
-
       </div>
-      <div class="col">
-        <div class="contactForm">
-          <form class="container" action="mailto:shujat_shehan@yahoo.com" method="get" enctype="text/plain">
-            <div class="form-row align-items-center">
-              <div class="col-auto">
-                <label class="mr-sm-2" for="inlineFormCustomSelect">
-                  <h5>Subject</h5>
-                </label>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-                  <option selected>Please select the subject of your message</option>
-                  <option value="1">Cancel Order</option>
-                  <option value="2">Regarding Event</option>
-                  <option value="3">Order status</option>
-                  <option value="4">Food quality</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class=" form-group col-md-4 mb-3">
-                <label>First name</label>
-                <input type="text" class="form-control" placeholder="First name" required>
-              </div>
-              <div class=" form-group col-md-4 mb-3">
-                <label>Last name</label>
-                <input type="text" class="form-control" placeholder="Last name" required>
-              </div>
-            </div>
+  </div>
 
-            <div class="form-row">
-              <div class="form-group col-md-4 mb-3">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-              </div>
-              <div class="form-group col-md-4 mb-3">
-                <label for="input4">Phone Number</label>
-                <input type="number" class="form-control" id="input4" placeholder="012-345-678">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-4 mb-3">
-                <label for="order">Booking Number</label>
-                <input type="text" class="form-control" id="order" placeholder="XYZ-1234">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6 mb-3">
-                <label for="comment">Comments</label>
-                <input type="text" class="form-control" id="comment"
-                  placeholder="Please enter your question, reason and concern.">
-              </div>
-            </div>
-            <button type="submit" name="submit" value="Send" class="btn btn-success">Submit</button>
-            <button type="reset" name="reset" value="Clear Form" class="btn btn-info"/>Clear Form</button>
-          </form>
+
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="p-2">
+            <img src="images/Awards.jpg" alt="...">
+          </div>
+          <div class="p-2">
+            <p class="container">
+              <ul>
+                <h5>Awards & honors</h5>
+                <li>Top 4 Sweden's Best Restaurants, White Guide 2019</li>
+                <li> Awarded two stars in the Michelin Guide 2019</li>
+                <li> Service team of the year, Swedish Restaurants awards 2018</li>
+                <li> Awarded a star in the Michelin Guide 2018</li>
+                <li>Top 6 Nordic Best Restaurants, White Guide 2018</li>
+                <li>Top 4 Sweden's Best Restaurants, White Guide 2018</li>
+              </ul>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Footer -->
   <footer class="page-footer font-small unique-color-dark">
